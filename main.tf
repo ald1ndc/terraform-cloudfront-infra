@@ -1,7 +1,7 @@
 resource "aws_cloudfront_distribution" "s3_distribution" {
   origin {
     domain_name = "sctp-staticwebsite-files.s3.ap-southeast-1.amazonaws.com"
-    origin_id = "sctp-staticwebsite-files.s3"
+    origin_id = "sctp-staticwebsite-files"
   }
 
   enabled             = true
